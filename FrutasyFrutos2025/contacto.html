@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frutas & Frutos - Contacto</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Dancing+Script&family=Lato:wght@100&family=Roboto&family=Work+Sans:wght@300&display=swap"
+        rel="stylesheet" />
+</head>
+
+<body>
+    <header class="cabecera">
+        <img class="logo" src="imagenes/11frutas.png" alt="Logo Frutas & Frutos" />
+        <nav class="navegacion">
+            <ul class="navegacion-principal">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#">Recetas</a></li>
+                <li><a href="#">Quienes Somos</a></li>
+                <li><a href="contacto.html" class="menu__link--activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner1" role="img" aria-label="Banner de contacto"></section>
+
+        <section>
+            <h2 class="sobre-titulo">Contacte y comparta su receta</h2>
+        </section>
+
+        <form>
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required placeholder="Tu nombre y apellido" />
+
+            <label for="correoelectronico">Correo Electrónico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com" />
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XX XX XXXXXX" />
+
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje" class="input-padron" required
+                placeholder="Contanos tu receta o consulta..."></textarea>
+
+            <fieldset>
+                <legend>¿Cómo te gustaría que te contactemos?</legend>
+                <label for="radio-email"><input type="radio" name="contacto" value="email"
+                        id="radio-email" />Email</label>
+                <label for="radio-telefono"><input type="radio" name="contacto" value="telefono"
+                        id="radio-telefono" />Teléfono</label>
+                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp" id="radio-whatsapp"
+                        checked />WhatsApp</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>¿En qué horario preferís ser atendido?</legend>
+                <select>
+                    <option value="mañana">Mañana</option>
+                    <option value="tarde">Tarde</option>
+                    <option value="noche">Noche</option>
+                </select>
+            </fieldset>
+
+            <label class="checkbox">
+                <input type="checkbox" checked />
+                ¿Querés recibir novedades de Frutas & Frutos?
+            </label>
+
+            <input type="submit" value="Enviar formulario" class="enviar" />
+        </form>
+    </main>
+
+    <footer class="piedepagina">
+        <h2 class="pie__titulo">Frutas & Frutos 2025</h2>
+        <p>Todos los derechos reservados.</p>
+        <ul class="pie__lista">
+            <li class="pie__item"><a href="#"><img alt="WhatsApp" src="imagenes/WhatsApp.png" /></a></li>
+            <li class="pie__item"><a href="#"><img alt="Email" src="imagenes/email.png" /></a></li>
+            <li class="pie__item"><a href="#"><img alt="Instagram" src="imagenes/Instagram.png" /></a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
